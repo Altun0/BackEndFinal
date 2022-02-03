@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MacBook\\Desktop\\BackEndFinal\\BackEndFinal\\BackEndFinal.csproj": {}
+    "C:\\Users\\MacBook\\Desktop\\BackEndFinalProject\\BackEndFinal\\BackEndFinal\\BackEndFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MacBook\\Desktop\\BackEndFinal\\BackEndFinal\\BackEndFinal.csproj": {
+    "C:\\Users\\MacBook\\Desktop\\BackEndFinalProject\\BackEndFinal\\BackEndFinal\\BackEndFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MacBook\\Desktop\\BackEndFinal\\BackEndFinal\\BackEndFinal.csproj",
+        "projectUniqueName": "C:\\Users\\MacBook\\Desktop\\BackEndFinalProject\\BackEndFinal\\BackEndFinal\\BackEndFinal.csproj",
         "projectName": "BackEndFinal",
-        "projectPath": "C:\\Users\\MacBook\\Desktop\\BackEndFinal\\BackEndFinal\\BackEndFinal.csproj",
+        "projectPath": "C:\\Users\\MacBook\\Desktop\\BackEndFinalProject\\BackEndFinal\\BackEndFinal\\BackEndFinal.csproj",
         "packagesPath": "C:\\Users\\MacBook\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MacBook\\Desktop\\BackEndFinal\\BackEndFinal\\obj\\",
+        "outputPath": "C:\\Users\\MacBook\\Desktop\\BackEndFinalProject\\BackEndFinal\\BackEndFinal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MacBook\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,32 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
