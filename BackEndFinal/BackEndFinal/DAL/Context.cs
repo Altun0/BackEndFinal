@@ -16,5 +16,6 @@ namespace BackEndFinal.DAL
         }
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<SlidersDesc> SlidersDescs { get; set; }
+     
     }
 }

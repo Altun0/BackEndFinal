@@ -10,5 +10,6 @@ namespace BackEndFinal.ViewModels
     {
         public List<Slider> Sliders { get; set; }
         public SlidersDesc SlidersDesc { get; set; }
+      
     }
 }
