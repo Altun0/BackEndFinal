@@ -20,6 +20,10 @@ namespace BackEndFinal.DAL
         public DbSet<ViewCourse> viewCourses  { get; set; }
         public DbSet<courseweoffer> courseweoffers { get; set; }
         public DbSet<row> rows { get; set; }
+        public DbSet<uppcomingevent> uppcomingevents { get; set; }
+        public DbSet<workshop> workshops { get; set; }
+        public DbSet<testimonial> testimonials { get; set; }
+        public DbSet<blogdetails> blogdetails { get; set; }
 
 
     }

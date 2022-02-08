@@ -27,7 +27,12 @@ namespace BackEndFinal.Controllers
                 noticeRights=_context.noticeRights.ToList(),
                 viewcourses=_context.viewCourses.FirstOrDefault(),
                 courseweoffer=_context.courseweoffers.FirstOrDefault(),
-                rows=_context.rows.ToList()
+                rows=_context.rows.ToList(),
+                uppcomingevent=_context.uppcomingevents.FirstOrDefault(),
+                workshops=_context.workshops.ToList(),
+                testimonial=_context.testimonials.FirstOrDefault(),
+                blogdetails=_context.blogdetails.ToList()
+
 
                 
             };

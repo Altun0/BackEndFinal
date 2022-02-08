@@ -137,7 +137,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="section-title">
-                        <img src="@Model.courseweoffer.ImageUrl" alt="@Model.courseweoffer.ImageUrl">
+                        <img src="~/img/icon/@Model.courseweoffer.ImageUrl" alt="">
                         <h2>@Model.courseweoffer.Name</h2>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                         <div class="single-course">
                             <div class="course-img">
                                 <a href="course-details.html">
-                                    <img src="img/course/course1.jpg" alt="course">
+                                    <img src="~/img/course/@rows.ImageUrl" alt="course">
                                     <div class="course-hover">
                                         <i class="fa fa-link"></i>
                                     </div>
@@ -174,154 +174,61 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="section-title">
-                        <img src="img/icon/section.png" alt="section-title">
-                        <h2>UPCOMMING EVENTS</h2>
+                        <img src="~/img/icon/@Model.uppcomingevent.ImageUrl" alt="section-title">
+                        <h2>@Model.uppcomingevent.Name</h2>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="single-event mb-35">
-                        <div class="event-date">
-                            <h3><a href="event-details.html">20 <span>June</span></a></h3>
+            <div class="row">  
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            @foreach (var workshop in Model.workshops)
+                            {
+                                <div class="single-event mb-35">
+                                    <div class="event-date">
+                                        <h3><a href="event-details.html">@workshop.Date1 <span>@workshop.Date2</span></a></h3>
+                                    </div>
+                                    <div class="event-content text-left">
+                                        <div class="event-content-left">
+                                            <h4><a href="event-details.html">@workshop.Title</a></h4>
+                                            <ul>
+                                                <li><i class="fa fa-clock-o"></i>@workshop.Date</li>
+                                                <li><i class="fa fa-map-marker"></i>@workshop.City</li>
+                                            </ul>
+                                        </div>
+                                        <div class="event-content-right">
+                                            <a class="default-btn" href="event-details.html">@workshop.JoinNow</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
                         </div>
-                        <div class="event-content text-left">
-                            <div class="event-content-left">
-                                <h4><a href="event-details.html">MICRO BIOLOGICAL WORKSHOP</a></h4>
-                                <ul>
-                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                </ul>
+                        <div class="col-md-6 hidden-sm hidden-xs">
+                           
+                            
+                                @foreach (var workshop in Model.workshops)
+                                {
+                                    <div class="single-event mb-35">
+                                        <div class="event-date">
+                                            <h3><a href="event-details.html">@workshop.Date1 <span>@workshop.Date2</span></a></h3>
+                                        </div>
+                                        <div class="event-content text-left">
+                                            <div class="event-content-left">
+                                                <h4><a href="event-details.html">@workshop.Title</a></h4>
+                                                <ul>
+                                                    <li><i class="fa fa-clock-o"></i>@workshop.Date</li>
+                                                    <li><i class="fa fa-map-marker"></i>@workshop.City</li>
+                                                </ul>
+                                            </div>
+                                            <div class="event-content-right">
+                                                <a class="default-btn" href="event-details.html">@workshop.JoinNow</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
                             </div>
-                            <div class="event-content-right">
-                                <a class="default-btn" href="event-details.html">join now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-event mb-35">
-                        <div class="event-date">
-                            <h3><a href="event-details.html">18 <span>June</span></a></h3>
-                        </div>
-                        <div class="event-content text-left">
-                            <div class="event-content-left">
-                                <h4><a href="event-details.html">ADVANCE PHP WORKSHOP</a></h4>
-                                <ul>
-                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                </ul>
-                            </div>
-                            <div class="event-content-right">
-                                <a class="default-btn" href="event-details.html">join now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-event mb-35">
-                        <div class="event-date">
-                            <h3><a href="event-details.html">16 <span>June</span></a></h3>
-                        </div>
-                        <div class="event-content text-left">
-                            <div class="event-content-left">
-                                <h4><a href="event-details.html">LEARN ENGLISH HISTORY</a></h4>
-                                <ul>
-                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                </ul>
-                            </div>
-                            <div class="event-content-right">
-                                <a class="default-btn" href="event-details.html">join now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-event">
-                        <div class="event-date">
-                            <h3><a href="event-details.html">14 <span>June</span></a></h3>
-                        </div>
-                        <div class="event-content text-left">
-                            <div class="event-content-left">
-                                <h4><a href="event-details.html">GLOBAL ECONOMIC CONFERENCE</a></h4>
-                                <ul>
-                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                </ul>
-                            </div>
-                            <div class="event-content-right">
-                                <a class="default-btn" href="event-details.html">join now</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 hidden-sm hidden-xs">
-                    <div class="single-event mb-35">
-                        <div class="event-date">
-                            <h3><a href="event-details.html">12 <span>June</span></a></h3>
-                        </div>
-                        <div class="event-content text-left">
-                            <div class="event-content-left">
-                                <h4><a href="event-details.html">MATHEMATICAL WORKSHOP</a></h4>
-                                <ul>
-                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                </ul>
-                            </div>
-                            <div class="event-content-right">
-                                <a class="default-btn" href="event-details.html">join now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-event mb-35">
-                        <div class="event-date">
-                            <h3><a href="event-details.html">10 <span>June</span></a></h3>
-                        </div>
-                        <div class="event-content text-left">
-                            <div class="event-content-left">
-                                <h4><a href="event-details.html">WORDPRESS AUTHOR MEET UP</a></h4>
-                                <ul>
-                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                </ul>
-                            </div>
-                            <div class="event-content-right">
-                                <a class="default-btn" href="event-details.html">join now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-event mb-35">
-                        <div class="event-date">
-                            <h3><a href="event-details.html">08 <span>June</span></a></h3>
-                        </div>
-                        <div class="event-content text-left">
-                            <div class="event-content-left">
-                                <h4><a href="event-details.html">DIGITAL MARKETING ANALYSIS</a></h4>
-                                <ul>
-                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                </ul>
-                            </div>
-                            <div class="event-content-right">
-                                <a class="default-btn" href="event-details.html">join now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-event">
-                        <div class="event-date">
-                            <h3><a href="event-details.html">06 <span>June</span></a></h3>
-                        </div>
-                        <div class="event-content text-left">
-                            <div class="event-content-left">
-                                <h4><a href="event-details.html">WROKSHOP ON UI &amp; UX</a></h4>
-                                <ul>
-                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                </ul>
-                            </div>
-                            <div class="event-content-right">
-                                <a class="default-btn" href="event-details.html">join now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- Event Area End -->
     <!-- Testimonial Area Start -->
@@ -333,12 +240,12 @@
                         <div class="single-testimonial">
                             <div class="testimonial-info">
                                 <div class="testimonial-img">
-                                    <img src="img/testimonial/testimonial.jpg" alt="testimonial">
+                                    <img src="~/img/testimonial/@Model.testimonial.ImageUrl" alt="testimonial">
                                 </div>
                                 <div class="testimonial-content">
-                                    <p>I must explain to you how all this mistaken idea of denoung pleure and praising pain was born and I will give you a coete account of the system, and expound the actual</p>
-                                    <h4>David Morgan</h4>
-                                    <h5>Student, CSE</h5>
+                                    <p>@Model.testimonial.Description</p>
+                                    <h4>@Model.testimonial.Name</h4>
+                                    <h5>@Model.testimonial.property</h5>
                                 </div>
                             </div>
                         </div>
@@ -353,70 +260,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="section-title text-center">
-                        <img src="img/icon/section.png" alt="section-title">
-                        <h2>LATEST FROM BLOG</h2>
+                    <div class="section-title">
+                        <img src="~/img/icon/@Model.courseweoffer.ImageUrl" alt="">
+                        <h2>@Model.courseweoffer.Name</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-blog">
-                        <div class="blog-img">
-                            <a href="blog-details.html"><img src="img/blog/blog1.jpg" alt="blog"></a>
-                            <div class="blog-hover">
-                                <a href="blog-details.html"><i class="fa fa-link"></i></a>
+                @foreach (var blogdetails in Model.blogdetails)
+                {
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="blog-details.html"><img src="~/img/blog/@blogdetails.ImageUrl" alt="blog"></a>
+                                <div class="blog-hover">
+                                    <a href="blog-details.html"><i class="fa fa-link"></i></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-top">
-                                <p>By Alex  /  June 20, 2017  /  <i class="fa fa-comments-o"></i> 4</p>
-                            </div>
-                            <div class="blog-bottom">
-                                <h2><a href="blog-details.html">I must explain to you how all this a mistaken idea </a></h2>
-                                <a href="blog-details.html">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="single-blog">
-                        <div class="blog-img">
-                            <a href="blog-details.html"><img src="img/blog/blog2.jpg" alt="blog"></a>
-                            <div class="blog-hover">
-                                <a href="blog-details.html"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-top">
-                                <p>By Alex  /  June 20, 2017  /  <i class="fa fa-comments-o"></i> 4</p>
-                            </div>
-                            <div class="blog-bottom">
-                                <h2><a href="blog-details.html">I must explain to you how all this a mistaken idea </a></h2>
-                                <a href="blog-details.html">read more</a>
+                            <div class="blog-content">
+                                <div class="blog-top">
+                                    <p>@blogdetails.Date <i class="fa fa-comments-o"></i> @blogdetails.Datetime</p>
+                                </div>
+                                <div class="blog-bottom">
+                                    <h2><a href="blog-details.html">@blogdetails.Description</a></h2>
+                                    <a href="blog-details.html">@blogdetails.ReadMore</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 hidden-sm col-xs-12">
-                    <div class="single-blog">
-                        <div class="blog-img">
-                            <a href="blog-details.html"><img src="img/blog/blog3.jpg" alt="blog"></a>
-                            <div class="blog-hover">
-                                <a href="blog-details.html"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-top">
-                                <p>By Alex  /  June 20, 2017  /  <i class="fa fa-comments-o"></i> 4</p>
-                            </div>
-                            <div class="blog-bottom">
-                                <h2><a href="blog-details.html">I must explain to you how all this a mistaken idea </a></h2>
-                                <a href="blog-details.html">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                }
             </div>
         </div>
     </div>

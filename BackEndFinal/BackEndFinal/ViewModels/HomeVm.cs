@@ -14,6 +14,11 @@ namespace BackEndFinal.ViewModels
         public ViewCourse viewcourses{ get; set; }
         public courseweoffer courseweoffer { get; set; }
         public List<row> rows { get; set; }
+        public uppcomingevent uppcomingevent { get; set; }
+        public List<workshop> workshops { get; set; }
+        public testimonial testimonial { get; set; }
+        public List<blogdetails> blogdetails { get; set; }
+
 
     }
 }
