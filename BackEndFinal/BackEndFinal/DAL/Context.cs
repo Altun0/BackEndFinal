@@ -15,7 +15,14 @@ namespace BackEndFinal.DAL
 
         }
         public DbSet<Slider> Sliders { get; set; }
-        public DbSet<SlidersDesc> SlidersDescs { get; set; }
-     
+        public DbSet<NoticeBoard> noticeBoards   { get; set; }
+        public DbSet<NoticeRight> noticeRights { get; set; }
+        public DbSet<ViewCourse> viewCourses  { get; set; }
+        public DbSet<courseweoffer> courseweoffers { get; set; }
+        public DbSet<row> rows { get; set; }
+
+
     }
 }
+
+

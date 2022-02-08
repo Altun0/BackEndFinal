@@ -2,30 +2,30 @@
 
 namespace BackEndFinal.Migrations
 {
-    public partial class addSliderDescTable : Migration
+    public partial class addViewCourse : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "SlidersDescs",
+                name: "viewCourses",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(nullable: true),
-                    Desc = table.Column<string>(nullable: true),
-                    ImageUrl = table.Column<string>(nullable: true)
+                    Question = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    Click = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_SlidersDescs", x => x.Id);
+                    table.PrimaryKey("PK_viewCourses", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "SlidersDescs");
+                name: "viewCourses");
         }
     }
 }

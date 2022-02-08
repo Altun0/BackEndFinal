@@ -18,12 +18,21 @@ namespace BackEndFinal.Controllers
         }
         public IActionResult Index()
         {
-            List<int> sliders = _context.Sliders.Select(x=> x.Id).ToList();
-            SlidersDesc sliderDesc = _context.SlidersDescs.FirstOrDefault();
-            HomeVm homeVm = new HomeVm();
-            //homeVm.Sliders = sliders;
-            homeVm.SlidersDesc = sliderDesc;
-            return View(homeVm);
+           
+
+            HomeVm homeVm = new HomeVm
+            {
+                Sliders= _context.Sliders.ToList(),
+                noticeBoards=_context.noticeBoards.ToList(),
+                noticeRights=_context.noticeRights.ToList(),
+                viewcourses=_context.viewCourses.FirstOrDefault(),
+                courseweoffer=_context.courseweoffers.FirstOrDefault(),
+                rows=_context.rows.ToList()
+
+                
+            };
+
+                return View(homeVm);
         }
     }
 }
