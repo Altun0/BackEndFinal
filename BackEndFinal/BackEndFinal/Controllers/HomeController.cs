@@ -32,9 +32,6 @@ namespace BackEndFinal.Controllers
                 workshops=_context.workshops.ToList(),
                 testimonial=_context.testimonials.FirstOrDefault(),
                 blogdetails=_context.blogdetails.ToList()
-
-
-                
             };
 
                 return View(homeVm);

@@ -125,3 +125,8 @@ C:\Users\MacBook\Desktop\BackEndFinalProject\BackEndFinal\BackEndFinal\bin\Debug
 C:\Users\MacBook\Desktop\BackEndFinalProject\BackEndFinal\BackEndFinal\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\MacBook\Desktop\BackEndFinalProject\BackEndFinal\BackEndFinal\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\MacBook\Desktop\BackEndFinalProject\BackEndFinal\BackEndFinal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\MacBook\Desktop\BackEndFinalProject\BackEndFinal\BackEndFinal\obj\Debug\netcoreapp3.1\Razor\Views\Course\Index.cshtml.g.cs
+C:\Users\MacBook\Desktop\BackEndFinalProject\BackEndFinal\BackEndFinal\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\MacBook\Desktop\BackEndFinalProject\BackEndFinal\BackEndFinal\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewImports.cshtml.g.cs
+C:\Users\MacBook\Desktop\BackEndFinalProject\BackEndFinal\BackEndFinal\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewStart.cshtml.g.cs
+C:\Users\MacBook\Desktop\BackEndFinalProject\BackEndFinal\BackEndFinal\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Dashboard\Index.cshtml.g.cs
